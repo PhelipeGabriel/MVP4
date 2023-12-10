@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Diagnostico de Calculos Renais</title>
+    <link rel="icon" href="imagens/pedra-nos-rins_16556_l.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <!--Informações do sistema -->
+        <header>
+            <h1>Diagnóstico de Cálculos Renais - Baseado em análises de Urina</h1>
+        </header>
+
+        <!--Informações Importantes -->
+
+        <div class="info">
+            <h3>Informações Importantes:</h3>
+            <hr>
+            <p>1- Gravidade específica, a densidade da urina em relação à água.</p>
+            <hr>
+            <p>2- PH, o logaritmo negativo do íon hidrogênio.</p>
+            <hr>
+            <p>3- Osmolaridade (mOsm).</p>
+            <hr>
+            <p>4- Condutividade (mMho miliMho).</p>
+            <hr>
+            <p>5- Concentração de ureia em milimetros por litro.</p>
+            <hr>
+            <p>6- Concentração de cálcio (CALC) em milimetros por litro.</p>
+            <hr>
+            <p>Resultado: 0 Negativo e 1 Positivo</p>
+        </div>
+
+        <!-- Informações que vão ser colocadas -->
+
+        <div class="newItem">
+            <form name="dados-paciente">
+                <input type="text" id="newInput" placeholder="Nome do Paciente">
+                <input type="number" id="newGrav"  placeholder="Gravidade">
+                <input type="number" id="newPh"  placeholder="PH"> 
+                <input type="number" id="newOsm"  placeholder="Osmolaridade">
+                <input type="number" id="newCond"  placeholder="Condutividade mMho">
+                <input type="number" id="newUrea"  placeholder="Concentração da Uréia">
+                <input type="number" id="newCalc"  placeholder="Concentração de Cálcio">
+            </form>
+        </div>
+        <div class="show-button">
+            <span onclick="newItem()" class="insert-btn">Testar</span>
+        </div>
+         
+        <!--Informações que foram Adicionadas -->
+
+        <div class="items">
+            <table id="myTable">
+                <tr class="tr-caput">
+                    <th id="thNome">Nome do Paciente</th>
+                    <th id="thGrav">Gravidade</th>
+                    <th id="thPh">PH</th>
+                    <th id="thOsmo">Osmolaridade</th>
+                    <th id="thCond">Condutividade</th>
+                    <th id="thUreia">Uréia</th>
+                    <th id="thCalc">Concentração de Cálcio</th>
+                    <th id="thDiag">Diagnóstico</th>
+                    <th id="th-del"><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px">
+                </tr>
+            </table>
+        </div>
+
+        <script src="scripts.js"></script>
+        
+        <footer>
+            <h4>Trabalho MVP4 - Especialização em Engenharia de SoftwareW PUC Rio 2023</h5>
+            <h5><a href="#">Aluno: Phelipe Gabriel</a></h6>
+        </footer>
+    </div> <!--container-->
+    
+</body>
+</html>
